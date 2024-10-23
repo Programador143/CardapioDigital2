@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+/* Definir as variáveis globais */
+:root {
+    --corNavegacao: #1E1F22;
+    --corBotaoTitulos: #FFAE00;
+    --corCards: rgba(37, 37, 37, 0.8);
+    --corTextos: #ffffff;
+}
+
+body {
+    background-image: url(imagens/bg.png);
+}
+
+header {
+    background-color: var(--corNavegacao);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px; /* Mantém apenas um */
+}
+
+a {
+    text-decoration: none;
+    color: var(--corTextos);
+    font-size: 20px;
+    margin: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.boxProduto {
+    background-color: var(--corCards);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 890px;
+    align-items: center;
+    justify-content: center; /* Adiciona se quiser centralizar */
+}
+
+.boxTexto {
+    width: 400px;
+    padding: 20px;
+}
+
+h1, h2, h3, p, button {
+    margin: 15px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--corBotaoTitulos);
+    text-transform: uppercase;
+}
+h3{
+    color: var(--corBotaoTitulos);
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 250px;
+}
+
+.boxImagem {
+    width: 400px;
+}
+
+button {
+    display: flex;
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    background-color: var(--corBotaoTitulos);
+    color: var(--corTextos); /* Cor do texto */
+    width: 150px;
+    padding: 15px;
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Troca o cursor ao passar por cima */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    transition: background-color 0.3s; /* Suaviza a mudança de cor */
+}
+
+button:hover {
+    background-color: var(--corBotaoHover); /* Cor de fundo ao passar o mouse */
+}
